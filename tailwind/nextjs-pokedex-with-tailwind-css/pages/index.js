@@ -11,7 +11,7 @@ export default function Home({ pokemon }) {
         {pokemon.map((pokeman, index) => (
           <li key={index}>
             <Link href={`/pokemon?id=${index + 1}`}>
-              <a className="border p-4 border-gray my-2 capitalize flex items-center text-lg bg-gray-200 shadow-md rounded-md">
+              <a className="border p-4 border-gray m-4 capitalize flex items-center text-lg bg-gray-200 shadow-md rounded-xl hover:bg-gray-100">
                 <div className="w-20 h-20 relative">
                   <Image
                     src={pokeman.image}
@@ -19,8 +19,8 @@ export default function Home({ pokemon }) {
                     layout="fill"
                   ></Image>
                 </div>
-                <span className="mr-2 font-bold">{index + 1}.</span>
-                {pokeman.name}
+                <span className="m-2 font-semibold">{("00" + (index + 1)).slice(-3)} - </span>
+                <span className="font-semibold">{pokeman.name}</span>
               </a>
             </Link>
           </li>
@@ -30,7 +30,7 @@ export default function Home({ pokemon }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   try {
     const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=150");
     const { results } = await res.json();
