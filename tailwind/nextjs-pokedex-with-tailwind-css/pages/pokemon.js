@@ -7,9 +7,9 @@ export default function pokemon({ pokeman }) {
   console.log(pokeman);
   return (
     <Layout title={pokeman.name}>
-      <div className="container mx-auto bg-gray-200 p-6 m-2 rounded-xl shadow-md hover:bg-gray-100">
+      <div className="container mx-auto bg-gray-200 p-4 rounded-xl shadow-md hover:bg-gray-100">
         <h1 className="text-4xl mb-2 text-center capitalize">{pokeman.name}</h1>
-        <div className="mx-auto w-40 h-40 lg:w-60 lg:h-60 relative">
+        <div className="mx-auto w-32 h-32 md:w-60 lg:h-60 relative">
           <Image src={pokeman.image} alt={pokeman.name} layout="fill"></Image>
         </div>
         <p>

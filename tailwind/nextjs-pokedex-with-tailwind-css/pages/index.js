@@ -11,7 +11,7 @@ export default function Home({ pokemon }) {
         {pokemon.map((pokeman, index) => (
           <li key={index}>
             <Link href={`/pokemon?id=${index + 1}`}>
-              <a className="border p-4 border-gray m-4 capitalize flex items-center text-lg bg-gray-200 shadow-md rounded-xl hover:bg-gray-100">
+              <a className="border p-4 border-gray mt-6 mb-6 capitalize flex items-center text-lg bg-gray-200 shadow-md rounded-xl hover:bg-gray-100">
                 <div className="w-20 h-20 relative">
                   <Image
                     src={pokeman.image}
