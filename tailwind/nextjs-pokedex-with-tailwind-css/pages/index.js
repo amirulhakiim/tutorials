@@ -17,6 +17,7 @@ export default function Home({ pokemon }) {
                     src={pokeman.image}
                     alt={pokeman.name}
                     layout="fill"
+                    priority={true}
                   ></Image>
                 </div>
                 <span className="m-2 font-semibold">

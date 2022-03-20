@@ -6,7 +6,7 @@ export default function Layout({ title, children }) {
     <div className="bg-gray-300">
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/pokemon-logo.png" />
+        <link rel="icon" href="/pokemon-logo.ico" />
       </Head>
       <main className="container mx-auto max-w-sm md:max-w-xl p-2 min-h-screen">
         {children}

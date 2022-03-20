@@ -10,7 +10,7 @@ export default function pokemon({ pokeman }) {
       <div className="container mx-auto bg-gray-200 p-4 mt-4 rounded-xl shadow-md hover:bg-gray-100">
         <h1 className="text-4xl mb-2 text-center capitalize">{pokeman.name}</h1>
         <div className="mx-auto w-32 h-32 md:w-60 lg:h-60 relative">
-          <Image src={pokeman.image} alt={pokeman.name} layout="fill"></Image>
+          <Image src={pokeman.image} alt={pokeman.name} layout="fill" priority={true}></Image>
         </div>
         <p>
           <span className="font-semibold mr-2 mx-auto">Weight: </span>
