@@ -19,7 +19,9 @@ export default function Home({ pokemon }) {
                     layout="fill"
                   ></Image>
                 </div>
-                <span className="m-2 font-semibold">{("00" + (index + 1)).slice(-3)} - </span>
+                <span className="m-2 font-semibold">
+                  {("00" + (index + 1)).slice(-3)} -{" "}
+                </span>
                 <span className="font-semibold">{pokeman.name}</span>
               </a>
             </Link>

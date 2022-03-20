@@ -14,11 +14,11 @@ export default function pokemon({ pokeman }) {
         </div>
         <p>
           <span className="font-semibold mr-2 mx-auto">Weight: </span>
-          {pokeman.weight} cm
+          {pokeman.weight/10} kg
         </p>
         <p>
           <span className="font-semibold mr-2 mx-auto">Height: </span>
-          {pokeman.height} kg
+          {pokeman.height/10} m
         </p>
         <h2 className="font-bold text-2xl mt-6 mb-2">Types</h2>
         {pokeman.types.map((type, index) => (
