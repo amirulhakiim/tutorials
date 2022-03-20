@@ -7,7 +7,7 @@ export default function pokemon({ pokeman }) {
   console.log(pokeman);
   return (
     <Layout title={pokeman.name}>
-      <div className="container mx-auto bg-gray-200 p-4 rounded-xl shadow-md hover:bg-gray-100">
+      <div className="container mx-auto bg-gray-200 p-4 mt-4 rounded-xl shadow-md hover:bg-gray-100">
         <h1 className="text-4xl mb-2 text-center capitalize">{pokeman.name}</h1>
         <div className="mx-auto w-32 h-32 md:w-60 lg:h-60 relative">
           <Image src={pokeman.image} alt={pokeman.name} layout="fill"></Image>
@@ -18,7 +18,7 @@ export default function pokemon({ pokeman }) {
         </p>
         <p>
           <span className="font-semibold mr-2 mx-auto">Height: </span>
-          {pokeman.height} cm
+          {pokeman.height} kg
         </p>
         <h2 className="font-bold text-2xl mt-6 mb-2">Types</h2>
         {pokeman.types.map((type, index) => (
